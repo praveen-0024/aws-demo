@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: aws-demo
+
+server:
+  servlet:
+    context-path: /aws
+  port: 8081
+
+aws:
+  accessKey: MY_ACCESS_KEY
+  secretKey: MY_SECRET_KEY
+  region: REGION
+  bucket: BUCKET_NAME
+
+presigned:
+  url:
+    duration: 60
+
+file:
+  path: aws-demo/local/
